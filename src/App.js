@@ -145,7 +145,7 @@ function App() {
 
         if (process.env.NODE_ENV === 'development') {
           const model = genAI.getGenerativeModel({
-            model: "gemini-pro-vision",
+            model: "gemini-3.1-flash-lite",
             generationConfig,
           });
           const imagePart = await fileToGenerativePart(file);
